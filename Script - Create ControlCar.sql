@@ -98,6 +98,7 @@ CREATE TABLE `custo` (
   `custo_abastecimento` decimal(6,2) DEFAULT NULL,
   `custo_pedagio` decimal(6,2) DEFAULT NULL,
   `custo_estacionamento` decimal(6,2) DEFAULT NULL,
+  `custo_veiculo` decimal(6,2) default null,
   `id_viagem` int(11) NOT NULL,
   PRIMARY KEY (`id_custo`),
   UNIQUE KEY `id_viagem_unique` (`id_viagem`),
