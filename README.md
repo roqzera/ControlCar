@@ -1,10 +1,10 @@
 # ControlCar
 
-* Requirimentos *
-- É necessário ter o MySQL instalado na máquina para criação do database.
+* Requirimentos 
+  É necessário ter o MySQL instalado na máquina para criação do database.
 
 
-Instruções de instalação e configuração
+* Instruções de instalação e configuração
 
 1. Faça download dos arquivos de instalação (recomendamos a última versão).
 2. Extraia o pacote.
