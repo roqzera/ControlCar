@@ -20,6 +20,7 @@ CREATE TABLE `veiculo` (
   `ano` varchar(45) NOT NULL,
   `quilometragem` decimal(10,2) NOT NULL,
   `tipoveiculo` varchar(45) NOT NULL,
+  `status` varchar(45) not null,
   PRIMARY KEY (`id_veiculo`),
   UNIQUE KEY `placa_UNIQUE` (`placa`),
   UNIQUE KEY `numero_renavam_UNIQUE` (`numero_renavam`)
@@ -38,6 +39,7 @@ CREATE TABLE `funcionario` (
   `categoria_cnh` varchar(45) DEFAULT NULL,
   `validade_cnh` datetime DEFAULT NULL,
   `motorista` varchar(45) DEFAULT NULL,
+  `status` varchar(45) not null,
   PRIMARY KEY (`id_funcionario`),
   UNIQUE KEY `matricula_UNIQUE` (`matricula`),
   UNIQUE KEY `cpf_UNIQUE` (`cpf`)
