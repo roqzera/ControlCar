@@ -9,7 +9,7 @@
 
 1. Faça download dos arquivos de instalação (recomendamos a última versão).
 2. Extraia o pacote.
-3. Crie um usuário no MySQL com o 
+3. Crie um usuário no MySQL com o       
   user: root
   password: password
 4. Execute o script "Script - Create ControlCar" localizado na pasta raiz extraída para criação do banco e das tabelas.
