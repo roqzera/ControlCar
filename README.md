@@ -16,6 +16,9 @@
 5. Execute o setup.exe localizado na pasta raiz extraída para instalação do software ControlCar.
 6. Siga os passos e finalize a instalação.
 
-Observação: Para acessar o software, utilize       
+Observações: 
+* Para acessar o software, utilize       
   usuário: admin    
   senha: 1234
+
+* Para inspecionamento do código fonte, baixe o arquivo PimForms (lasted version).
