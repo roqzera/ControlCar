@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BF39538-7196-4B32-9F88-657621BADDF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PimForms</RootNamespace>
+    <AssemblyName>PimForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Custo.cs" />
+    <Compile Include="Classes\Login.cs" />
+    <Compile Include="Classes\Acompanhante.cs" />
+    <Compile Include="Classes\Manutencao.cs" />
+    <Compile Include="Classes\Multa.cs" />
+    <Compile Include="Classes\Seguros.cs" />
+    <Compile Include="Classes\Veiculo.cs" />
+    <Compile Include="Classes\Viagem.cs" />
+    <Compile Include="Dao\AcompanhanteDao.cs" />
+    <Compile Include="Dao\CustoDao.cs" />
+    <Compile Include="Dao\ManutencaoDao.cs" />
+    <Compile Include="Dao\MultaDAO.cs" />
+    <Compile Include="Dao\SegurosDao.cs" />
+    <Compile Include="Dao\ViagemDao.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarAcompanhante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarAcompanhante.Designer.cs">
+      <DependentUpon>CadastrarAcompanhante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarCustoViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarCustoViagem.Designer.cs">
+      <DependentUpon>CadastrarCustoViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarManutencao.Designer.cs">
+      <DependentUpon>CadastrarManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarMultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarMultas.Designer.cs">
+      <DependentUpon>CadastrarMultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarSeguro.Designer.cs">
+      <DependentUpon>CadastrarSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarViagem.Designer.cs">
+      <DependentUpon>CadastrarViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroManutencao.Designer.cs">
+      <DependentUpon>EditarCadastroManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroMulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroMulta.Designer.cs">
+      <DependentUpon>EditarCadastroMulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroVeiculo.Designer.cs">
+      <DependentUpon>EditarCadastroVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroViagem.Designer.cs">
+      <DependentUpon>EditarCadastroViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroCustoViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroCustoViagem.Designer.cs">
+      <DependentUpon>EditarCadastroCustoViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\ListarCustoViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\ListarCustoViagem.Designer.cs">
+      <DependentUpon>ListarCustoViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\ListarManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\ListarManutencao.Designer.cs">
+      <DependentUpon>ListarManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\ListarMulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\ListarMulta.Designer.cs">
+      <DependentUpon>ListarMulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\ListarViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\ListarViagem.Designer.cs">
+      <DependentUpon>ListarViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\ConexaoBanco.cs" />
+    <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Dao\FuncionarioDao.cs" />
+    <Compile Include="Dao\VeiculoDao.cs" />
+    <Compile Include="models\Formularios.cs" />
+    <Compile Include="Formulários\CadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarFuncionario.designer.cs">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\CadastrarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\CadastrarVeiculo.Designer.cs">
+      <DependentUpon>CadastrarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\EditarCadastroFuncionario.Designer.cs">
+      <DependentUpon>EditarCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\ListarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\ListarFuncionario.Designer.cs">
+      <DependentUpon>ListarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPrincipal.Designer.cs">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\ListarVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\ListarVeiculos.Designer.cs">
+      <DependentUpon>ListarVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenus\FormSubMenuFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenus\FormSubMenuFuncionario.Designer.cs">
+      <DependentUpon>FormSubMenuFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubMenus\FormSubMenuVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenus\FormSubMenuVeiculos.Designer.cs">
+      <DependentUpon>FormSubMenuVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenus\FormSubMenuViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenus\FormSubMenuViagem.Designer.cs">
+      <DependentUpon>FormSubMenuViagem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarCustoViagem.resx">
+      <DependentUpon>CadastrarCustoViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarFuncionario.resx">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarAcompanhante.resx">
+      <DependentUpon>CadastrarAcompanhante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarManutencao.resx">
+      <DependentUpon>CadastrarManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarMultas.resx">
+      <DependentUpon>CadastrarMultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarSeguro.resx">
+      <DependentUpon>CadastrarSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarVeiculo.resx">
+      <DependentUpon>CadastrarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\CadastrarViagem.resx">
+      <DependentUpon>CadastrarViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\EditarCadastroFuncionario.resx">
+      <DependentUpon>EditarCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\EditarCadastroManutencao.resx">
+      <DependentUpon>EditarCadastroManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\EditarCadastroMulta.resx">
+      <DependentUpon>EditarCadastroMulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\EditarCadastroVeiculo.resx">
+      <DependentUpon>EditarCadastroVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\EditarCadastroViagem.resx">
+      <DependentUpon>EditarCadastroViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\EditarCadastroCustoViagem.resx">
+      <DependentUpon>EditarCadastroCustoViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\ListarCustoViagem.resx">
+      <DependentUpon>ListarCustoViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\ListarFuncionario.resx">
+      <DependentUpon>ListarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPrincipal.resx">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\ListarManutencao.resx">
+      <DependentUpon>ListarManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\ListarMulta.resx">
+      <DependentUpon>ListarMulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\ListarVeiculos.resx">
+      <DependentUpon>ListarVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\ListarViagem.resx">
+      <DependentUpon>ListarViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenus\FormSubMenuFuncionario.resx">
+      <DependentUpon>FormSubMenuFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenus\FormSubMenuVeiculos.resx">
+      <DependentUpon>FormSubMenuVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenus\FormSubMenuViagem.resx">
+      <DependentUpon>FormSubMenuViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconecarro85x80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeviagem85x80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconeusuarioBranco85x80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_cancelar_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_confirmar_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_funcionario_darkGray_85x80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone_Veiculo_DarkGray_85x80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone_Viagem_DarkGray_85x80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_cadastrar_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_cadastrar_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_consultar_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_consultar_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_custo_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_custo_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_manutencao_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_manutencao_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_ocupantes_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_ocupantes_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_seguro_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_seguro_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_usuario_login_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_usuario_login_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_veiculo_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_veiculo_white_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_viagem_gray_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_viagem_white_30x30.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

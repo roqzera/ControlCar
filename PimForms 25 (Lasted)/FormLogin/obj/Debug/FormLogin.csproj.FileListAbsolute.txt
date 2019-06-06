@@ -1,0 +1,10 @@
+C:\Users\José\source\repos\PimForms\FormLogin\bin\Debug\FormLogin.exe.config
+C:\Users\José\source\repos\PimForms\FormLogin\bin\Debug\FormLogin.exe
+C:\Users\José\source\repos\PimForms\FormLogin\bin\Debug\FormLogin.pdb
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.csprojAssemblyReference.cache
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.Form1.resources
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.Properties.Resources.resources
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.csproj.GenerateResource.cache
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.csproj.CoreCompileInputs.cache
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.exe
+C:\Users\José\source\repos\PimForms\FormLogin\obj\Debug\FormLogin.pdb
