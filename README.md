@@ -7,7 +7,7 @@
 
 * Instruções de instalação e configuração
 
-1. Faça download dos arquivos de instalação (setup.rar).
+1. Faça download dos arquivos de instalação (Instalador - ControlCar).
 2. Extraia o pacote.
 3. Crie um usuário no MySQL com o       
   user: root      
