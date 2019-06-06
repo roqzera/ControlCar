@@ -7,7 +7,7 @@
 
 * Instruções de instalação e configuração
 
-1. Faça download dos arquivos de instalação (recomendamos a última versão).
+1. Faça download dos arquivos de instalação (setup.rar).
 2. Extraia o pacote.
 3. Crie um usuário no MySQL com o       
   user: root      
@@ -21,4 +21,4 @@ Observações:
   usuário: admin    
   senha: 1234
 
-* Para inspecionamento do código fonte, baixe o arquivo PimForms (lasted version).
+* Para inspecionamento do código fonte, baixe o arquivo "PimForms XX (Lasted)".
